@@ -95,7 +95,7 @@ module DBI
         #
         class Decimal < Float
             def self.parse(obj)
-                BigDecimal.new(obj) rescue super
+                BigDecimal(obj) rescue super
             end
         end
 
